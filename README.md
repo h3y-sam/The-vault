@@ -76,8 +76,3 @@ MIT License
 
 ## 📧 Contact
 - GitHub: [h3y-sam](https://github.com/h3y-sam)
-```
-
-This will give your repo a professional look and clearly explain your project’s mission, features, and setup.  
-
-👉 Do you want me to also add **badges** (like build status, license, or “Made with ❤️ by h3y.Sam”) at the very top for extra polish?
