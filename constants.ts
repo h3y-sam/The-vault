@@ -46,6 +46,7 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-pink-500 to-rose-500',
     links: [
+      { title: 'Netmirror | Best Netflix Mirror', url: 'https://net20.cc/home' },
       { title: 'Flixer | Most Popular *NO ADS*', url: 'https://flixer.su/' },
       { title: 'Cineby | *Netflix UI*', url: 'https://www.cineby.app/' },
       { title: 'BitCine | *Netflix UI*', url: 'https://www.bitcine.app/' },
