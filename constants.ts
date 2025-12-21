@@ -13,6 +13,20 @@ import { CategoryItem } from './types';
 
 export const CATEGORIES: CategoryItem[] = [
   {
+  id: 'all-in-one',
+  title: 'ALL IN ONE',
+  description: 'Movies, TV shows, anime, live channels — everything in one place',
+  icon: MonitorPlay,
+  url: '#',
+  gradient: 'from-indigo-500 via-purple-500 to-pink-500',
+  links: [
+    { 
+      title: 'TMOVIE | Movies, TV Shows, Anime & Live TV', 
+      url: 'https://tmovie.tv/' 
+    }
+  ]
+},
+  {
     id: 'games',
     title: 'Games',
     description: 'Discover amazing games and gaming resources',
