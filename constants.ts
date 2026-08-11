@@ -13,9 +13,9 @@ import {
 import { CategoryItem } from './types';
 
 export const CATEGORIES: CategoryItem[] = [
-  // =========================================================
+  // ============================================================
   // ALL IN ONE
-  // =========================================================
+  // ============================================================
   {
     id: 'all-in-one',
     title: 'ALL IN ONE',
@@ -40,9 +40,9 @@ export const CATEGORIES: CategoryItem[] = [
     ],
   },
 
-  // =========================================================
+  // ============================================================
   // GAMES
-  // =========================================================
+  // ============================================================
   {
     id: 'games',
     title: 'Games',
@@ -56,20 +56,20 @@ export const CATEGORIES: CategoryItem[] = [
         url: 'https://store.steampowered.com/',
       },
       {
-        title: 'Epic Games Store | PC Games',
-        url: 'https://store.epicgames.com/',
-      },
-      {
         title: 'GOG | DRM-Free Games',
         url: 'https://www.gog.com/',
       },
       {
-        title: 'Game Jolt | Indie Games',
-        url: 'https://gamejolt.com/',
+        title: 'Epic Games Store | PC Games',
+        url: 'https://store.epicgames.com/',
       },
       {
         title: 'Itch.io | Indie Games',
         url: 'https://itch.io/',
+      },
+      {
+        title: 'Game Jolt | Indie Games',
+        url: 'https://gamejolt.com/',
       },
 
       {
@@ -77,25 +77,24 @@ export const CATEGORIES: CategoryItem[] = [
         url: '#',
         isHeader: true,
       },
-
       {
         title: 'WeMod | Trainers App',
         url: 'https://www.wemod.com/',
       },
       {
-        title: 'FLiNG Trainer | Game Trainers',
-        url: 'https://flingtrainer.com/',
-      },
-      {
         title: 'Fearless Revolution | Gaming Community',
         url: 'https://fearlessrevolution.com/',
+      },
+      {
+        title: 'FLiNG Trainer | Game Trainers',
+        url: 'https://flingtrainer.com/',
       },
     ],
   },
 
-  // =========================================================
+  // ============================================================
   // MOVIES / SHOWS
-  // =========================================================
+  // ============================================================
   {
     id: 'movies',
     title: 'Movies/Shows',
@@ -104,7 +103,6 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-pink-500 to-rose-500',
     links: [
-      // Existing legitimate additions
       {
         title: 'Filmzie | Free Movies & Shows',
         url: 'https://filmzie.com/',
@@ -142,26 +140,25 @@ export const CATEGORIES: CategoryItem[] = [
         url: 'https://stremio.com/',
       },
 
-      // Useful sections
       {
         title: 'Documentaries',
         url: '#',
         isHeader: true,
       },
       {
-        title: 'Documentary Area | Documentaries',
-        url: 'https://www.documentaryarea.com/',
+        title: 'Docplus | Documentaries',
+        url: 'https://www.docplus.com/',
       },
       {
-        title: 'DocPlus | Documentaries',
-        url: 'https://www.docplus.com/',
+        title: 'Documentary Area | Documentaries',
+        url: 'https://www.documentaryarea.com/',
       },
     ],
   },
 
-  // =========================================================
+  // ============================================================
   // STREAMING
-  // =========================================================
+  // ============================================================
   {
     id: 'streaming',
     title: 'Streaming',
@@ -179,15 +176,15 @@ export const CATEGORIES: CategoryItem[] = [
         url: 'https://plex.tv/',
       },
       {
-        title: 'Tubi | Live TV & Movies',
+        title: 'Tubi | Live TV',
         url: 'https://tubitv.com/',
       },
     ],
   },
 
-  // =========================================================
+  // ============================================================
   // SOFTWARE
-  // =========================================================
+  // ============================================================
   {
     id: 'software',
     title: 'Software',
@@ -196,10 +193,6 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-emerald-400 to-teal-500',
     links: [
-      {
-        title: 'Microsoft | Software & Tools',
-        url: 'https://www.microsoft.com/',
-      },
       {
         title: 'GitHub | Developer Platform',
         url: 'https://github.com/',
@@ -216,12 +209,16 @@ export const CATEGORIES: CategoryItem[] = [
         title: 'DaVinci Resolve | Video Editing',
         url: 'https://www.blackmagicdesign.com/products/davinciresolve',
       },
+      {
+        title: 'Microsoft | Software & Tools',
+        url: 'https://www.microsoft.com/',
+      },
     ],
   },
 
-  // =========================================================
+  // ============================================================
   // BOOKS
-  // =========================================================
+  // ============================================================
   {
     id: 'books',
     title: 'Books',
@@ -253,9 +250,9 @@ export const CATEGORIES: CategoryItem[] = [
     ],
   },
 
-  // =========================================================
+  // ============================================================
   // MUSIC
-  // =========================================================
+  // ============================================================
   {
     id: 'music',
     title: 'Music',
@@ -284,12 +281,20 @@ export const CATEGORIES: CategoryItem[] = [
         title: 'YouTube Music | Music Streaming',
         url: 'https://music.youtube.com/',
       },
+      {
+        title: 'Music School | Bandcamp',
+        url: 'https://downloadmusicschool.com/bandcamp/',
+      },
+      {
+        title: 'Megathread | Music Resources',
+        url: 'https://github.com/MoonWalker440/Music-Megathread/',
+      },
     ],
   },
 
-  // =========================================================
+  // ============================================================
   // ANIME
-  // =========================================================
+  // ============================================================
   {
     id: 'anime',
     title: 'Anime',
@@ -317,9 +322,35 @@ export const CATEGORIES: CategoryItem[] = [
     ],
   },
 
-  // =========================================================
+  // ============================================================
+  // MANGA
+  // ============================================================
+  {
+    id: 'manga',
+    title: 'Manga',
+    description: 'Manga, webcomics and digital comics',
+    icon: BookOpen,
+    url: '#',
+    gradient: 'from-cyan-400 to-blue-500',
+    links: [
+      {
+        title: 'WEBTOON | Webcomics & Manga',
+        url: 'https://www.webtoons.com/',
+      },
+      {
+        title: 'MANGA Plus | Official Manga',
+        url: 'https://mangaplus.shueisha.co.jp/',
+      },
+      {
+        title: 'VIZ | Manga & Anime',
+        url: 'https://www.viz.com/',
+      },
+    ],
+  },
+
+  // ============================================================
   // VPN
-  // =========================================================
+  // ============================================================
   {
     id: 'vpn',
     title: 'VPN',
@@ -329,31 +360,31 @@ export const CATEGORIES: CategoryItem[] = [
     gradient: 'from-yellow-400 to-orange-500',
     links: [
       {
-        title: 'NordVPN | VPN',
+        title: 'NordVPN',
         url: 'https://nordvpn.com/',
       },
       {
-        title: 'ExpressVPN | VPN',
+        title: 'ExpressVPN',
         url: 'https://www.expressvpn.com/',
       },
       {
-        title: 'CyberGhost | VPN',
+        title: 'CyberGhost',
         url: 'https://www.cyberghostvpn.com/',
       },
       {
-        title: 'Private Internet Access | VPN',
+        title: 'Private Internet Access',
         url: 'https://www.privateinternetaccess.com/',
       },
       {
-        title: 'Surfshark | VPN',
+        title: 'Surfshark',
         url: 'https://surfshark.com/',
       },
     ],
   },
 
-  // =========================================================
+  // ============================================================
   // ADBLOCKERS
-  // =========================================================
+  // ============================================================
   {
     id: 'adblockers',
     title: 'AdBlockers',
