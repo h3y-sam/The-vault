@@ -1,100 +1,62 @@
-import {
-  Gamepad2,
-  Clapperboard,
-  MonitorPlay,
-  Laptop,
-  BookOpen,
-  Music,
-  Flower2,
-  Lock,
-  ShieldAlert,
+import { 
+  Gamepad2, 
+  Clapperboard, 
+  MonitorPlay, 
+  Laptop, 
+  BookOpen, 
+  Music, 
+  Flower2, 
+  Lock, 
+  ShieldAlert 
 } from 'lucide-react';
-
 import { CategoryItem } from './types';
 
 export const CATEGORIES: CategoryItem[] = [
-  // ============================================================
-  // ALL IN ONE
-  // ============================================================
   {
-    id: 'all-in-one',
-    title: 'ALL IN ONE',
-    description:
-      'Movies, TV shows, anime, live channels — everything in one place',
-    icon: MonitorPlay,
-    url: '#',
-    gradient: 'from-indigo-500 via-purple-500 to-pink-500',
-    links: [
-      {
-        title: 'Stremio | Streaming Platform',
-        url: 'https://stremio.com/',
-      },
-      {
-        title: 'Plex | Movies, TV & Streaming',
-        url: 'https://plex.tv/',
-      },
-      {
-        title: 'Pluto TV | Movies, Shows & Live TV',
-        url: 'https://pluto.tv/',
-      },
-    ],
-  },
-
-  // ============================================================
-  // GAMES
-  // ============================================================
+  id: 'all-in-one',
+  title: 'ALL IN ONE',
+  description: 'Movies, TV shows, anime, live channels — everything in one place',
+  icon: MonitorPlay,
+  url: '#',
+  gradient: 'from-indigo-500 via-purple-500 to-pink-500',
+  links: [
+    { 
+      title: 'TMOVIE | Movies, TV Shows, Anime & Live TV', 
+      url: 'https://tmovie.tv/' 
+    }
+  ]
+},
   {
     id: 'games',
     title: 'Games',
     description: 'Discover amazing games and gaming resources',
     icon: Gamepad2,
-    url: '#',
+    url: '#', 
     gradient: 'from-purple-500 to-indigo-500',
     links: [
-      {
-        title: 'Steam | PC Games',
-        url: 'https://store.steampowered.com/',
-      },
-      {
-        title: 'GOG | DRM-Free Games',
-        url: 'https://www.gog.com/',
-      },
-      {
-        title: 'Epic Games Store | PC Games',
-        url: 'https://store.epicgames.com/',
-      },
-      {
-        title: 'Itch.io | Indie Games',
-        url: 'https://itch.io/',
-      },
-      {
-        title: 'Game Jolt | Indie Games',
-        url: 'https://gamejolt.com/',
-      },
-
-      {
-        title: 'Trainers',
-        url: '#',
-        isHeader: true,
-      },
-      {
-        title: 'WeMod | Trainers App',
-        url: 'https://www.wemod.com/',
-      },
-      {
-        title: 'Fearless Revolution | Gaming Community',
-        url: 'https://fearlessrevolution.com/',
-      },
-      {
-        title: 'FLiNG Trainer | Game Trainers',
-        url: 'https://flingtrainer.com/',
-      },
-    ],
+        { title: 'Fitgirl Repacks | Popular Repacks', url: 'https://fitgirl-repacks.site/' },
+        { title: 'GOGgames | Free GOG Games', url: 'https://gog-games.to/' },
+        { title: 'Dodi Repacks | Repacks', url: 'https://dodi-repacks.download/' },
+        { title: 'AnkerGames | Wide selection of Games', url: 'https://ankergames.net/' },
+        { title: 'SteamGG | *Free* Preinstalled Steam Games', url: 'https://steamgg.net/' },
+        { title: 'SteamRip | *Free* Preinstalled Steam Games', url: 'https://steamrip.com/' },
+        { title: 'M4ckdoge Repacks | Repacks', url: 'https://m4ckd0ge-repacks.site/' },
+        { title: 'Elamigos | *Juegos Españoles*', url: 'https://elamigos.site/' },
+        { title: 'Online-Fix | Online for Cracked Games', url: 'https://online-fix.me/' },
+        { title: 'Emulator Roms', url: '#', isHeader: true },
+        { title: 'CDRomance *Registration Required*', url: 'https://retrogametalk.com/repository/' },
+        { title: 'Emuparadise', url: 'https://www.emuparadise.me/' },
+        { title: 'Trainers', url: '#', isHeader: true },
+        { title: 'WeMod | Trainers App', url: 'https://www.wemod.com/' },
+        { title: 'FearlessRevolution | Tables & Trainers', url: 'https://fearlessrevolution.com/' },
+        { title: 'FLiNGTrainer | Seperate Trainers', url: 'https://flingtrainer.com/' },
+      { title: 'Steam | PC Games', url: 'https://store.steampowered.com/' },
+{ title: 'Epic Games Store | PC Games', url: 'https://store.epicgames.com/' },
+{ title: 'GOG | DRM-Free Games', url: 'https://www.gog.com/' },
+{ title: 'Itch.io | Indie Games', url: 'https://itch.io/' },
+{ title: 'Game Jolt | Indie Games', url: 'https://gamejolt.com/' },
+    ]
   },
-
-  // ============================================================
-  // MOVIES / SHOWS
-  // ============================================================
   {
     id: 'movies',
     title: 'Movies/Shows',
@@ -103,62 +65,29 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-pink-500 to-rose-500',
     links: [
-      {
-        title: 'Filmzie | Free Movies & Shows',
-        url: 'https://filmzie.com/',
-      },
-      {
-        title: 'Pluto TV | Free Movies, Shows & Live TV',
-        url: 'https://pluto.tv/',
-      },
-      {
-        title: 'Tubi | Free Movies & TV',
-        url: 'https://tubitv.com/',
-      },
-      {
-        title: 'Crackle | Free Movies & TV',
-        url: 'https://crackle.com/',
-      },
-      {
-        title: 'Plex | Movies, TV & Streaming',
-        url: 'https://plex.tv/',
-      },
-      {
-        title: 'Popcornflix | Free Movies & TV',
-        url: 'https://popcornflix.com/',
-      },
-      {
-        title: 'Kanopy | Movies & Documentaries',
-        url: 'https://kanopy.com/',
-      },
-      {
-        title: 'Hoopla | Movies, TV & More',
-        url: 'https://hoopladigital.com/',
-      },
-      {
-        title: 'Stremio | Streaming Platform',
-        url: 'https://stremio.com/',
-      },
-
-      {
-        title: 'Documentaries',
-        url: '#',
-        isHeader: true,
-      },
-      {
-        title: 'Docplus | Documentaries',
-        url: 'https://www.docplus.com/',
-      },
-      {
-        title: 'Documentary Area | Documentaries',
-        url: 'https://www.documentaryarea.com/',
-      },
-    ],
+      { title: 'Netmirror | Best Netflix Mirror', url: 'https://net20.cc/home' },
+      { title: 'Flixer | Most Popular *NO ADS*', url: 'https://flixer.su/' },
+      { title: 'Cineby | *Netflix UI*', url: 'https://www.cineby.app/' },
+      { title: 'BitCine | *Netflix UI*', url: 'https://www.bitcine.app/' },
+      { title: 'VeloraTV | *Netflix UI*', url: 'https://veloratv.ru/' },
+      { title: 'XPrime Tv | *Netflix UI*', url: 'https://xprime.tv/' },
+      { title: 'Fmovies | Movies & TV', url: 'https://www.fmovies.gd/' },
+      { title: 'MKV Cinemas | Bollywood & Hollywood', url: 'https://mkvcinemas.kiwi/' },
+      { title: '1337x | *Torrents*', url: 'https://1337x.to/home/' },
+      { title: 'Docplus | *Documentaries*', url: 'https://www.docplus.com/' },
+      { title: 'Documentary Area | *Documentaries*', url: 'https://www.documentaryarea.com/' },
+      { title: '↓ TUTORIAL | PStream (4K) Setup ↓', url: 'https://vimeo.com/1059834885/c3ab398d42' },
+      { title: '↑ PStream | *Watch Tutorial for 4K* ↑', url: 'https://pstream.mov/' },
+      { title: 'Filmzie | Free Movies & Shows', url: 'https://filmzie.com/' },
+{ title: 'Pluto TV | Free Movies, Shows & Live TV', url: 'https://pluto.tv/' },
+{ title: 'Tubi | Free Movies & TV', url: 'https://tubitv.com/' },
+{ title: 'Crackle | Free Movies & TV', url: 'https://crackle.com/' },
+{ title: 'Plex | Movies, TV & Streaming', url: 'https://plex.tv/' },
+{ title: 'Popcornflix | Free Movies & TV', url: 'https://popcornflix.com/' },
+{ title: 'Kanopy | Movies & Documentaries', url: 'https://kanopy.com/' },
+{ title: 'Hoopla | Movies, TV & More', url: 'https://hoopladigital.com/' },
+    ]
   },
-
-  // ============================================================
-  // STREAMING
-  // ============================================================
   {
     id: 'streaming',
     title: 'Streaming',
@@ -167,24 +96,20 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-blue-400 to-cyan-500',
     links: [
-      {
-        title: 'Pluto TV | Live TV',
-        url: 'https://pluto.tv/',
-      },
-      {
-        title: 'Plex | Live TV',
-        url: 'https://plex.tv/',
-      },
-      {
-        title: 'Tubi | Live TV',
-        url: 'https://tubitv.com/',
-      },
-    ],
+        { title: 'StreamEast *All Mirrors*', url: 'https://gostreameast.link/' },
+        { title: 'Sportsurge | Live Sports', url: 'https://v3.sportsurge.to/home39' },
+        { title: 'WatchSports | *10 Sports*', url: 'https://watchsports.to/' },
+        { title: 'Streamed | Live Sports', url: 'https://streamed.su/' },
+        { title: 'TVPass | *USA*', url: 'https://tvpass.org/' },
+        { title: 'RiveLive', url: 'https://rivestream.org/livesports' },
+        { title: 'LiveHDTV', url: 'https://www.livehdtv.com/' },
+        { title: 'EasyWebTV *All Countries*', url: 'https://zhangboheng.github.io/Easy-Web-TV-M3u8/routes/countries.html' },
+        { title: 'RGShows *International Live TV*', url: 'https://www.rgshows.me/livetv/' },
+      { title: 'Pluto TV | Live TV', url: 'https://pluto.tv/' },
+{ title: 'Plex | Live TV', url: 'https://plex.tv/' },
+{ title: 'Tubi | Live TV', url: 'https://tubitv.com/' },
+    ]
   },
-
-  // ============================================================
-  // SOFTWARE
-  // ============================================================
   {
     id: 'software',
     title: 'Software',
@@ -193,32 +118,16 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-emerald-400 to-teal-500',
     links: [
-      {
-        title: 'GitHub | Developer Platform',
-        url: 'https://github.com/',
-      },
-      {
-        title: 'Visual Studio Code | Code Editor',
-        url: 'https://code.visualstudio.com/',
-      },
-      {
-        title: 'Blender | 3D Creation',
-        url: 'https://www.blender.org/',
-      },
-      {
-        title: 'DaVinci Resolve | Video Editing',
-        url: 'https://www.blackmagicdesign.com/products/davinciresolve',
-      },
-      {
-        title: 'Microsoft | Software & Tools',
-        url: 'https://www.microsoft.com/',
-      },
-    ],
+        { title: 'Appdoze | *Latest Softwares*', url: 'https://appdoze.net/' },
+        { title: 'Scloud | Windows Software', url: 'https://scloud.ws/' },
+        { title: 'DownloadPirate | VFX + Much More', url: 'https://www.downloadpirate.com/' },
+        { title: 'AeDownload | Premiere & After Effects Plugins', url: 'https://aedownload.com/' },
+        { title: 'Audioz | Music Production Software', url: 'https://audioz.download/' },
+        { title: 'DAIKOV | *Russian*', url: 'https://diakov.net/' },
+        { title: 'DownloadHa | *Persian*', url: 'https://www.downloadha.com/' },
+      
+    ]
   },
-
-  // ============================================================
-  // BOOKS
-  // ============================================================
   {
     id: 'books',
     title: 'Books',
@@ -227,32 +136,22 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-orange-400 to-amber-500',
     links: [
-      {
-        title: 'WEBTOON | Webcomics & Manga',
-        url: 'https://www.webtoons.com/',
-      },
-      {
-        title: 'Project Gutenberg | Free E-books',
-        url: 'https://www.gutenberg.org/',
-      },
-      {
-        title: 'Internet Archive | Digital Library',
-        url: 'https://archive.org/',
-      },
-      {
-        title: 'Open Library | Online Books',
-        url: 'https://openlibrary.org/',
-      },
-      {
-        title: 'Google Books | Books & Research',
-        url: 'https://books.google.com/',
-      },
-    ],
+        { title: 'Z-Lib | E-books', url: 'https://z-lib.gd/' },
+        { title: 'RiveManga | Manga', url: 'https://rivestream.org/manga' },
+        { title: 'Libgen | E-books', url: 'https://libgen.li/' },
+        { title: "Anna's Archive | E-books & Reasearch papers", url: 'https://annas-archive.org/' },
+        { title: 'Liber3 | E-books', url: 'https://liber3.eth.limo/' },
+        { title: 'Audiobookbay | Audiobooks', url: 'https://audiobookbay.lu/' },
+        { title: 'Full Length Audiobooks | *No Account Required*', url: 'https://fulllengthaudiobooks.net/' },
+        { title: 'Tokybook | Audiobooks *Smaller Catalog*', url: 'https://tokybook.com/' },
+      { title: 'WEBTOON | Webcomics & Manga', url: 'https://www.webtoons.com/' },
+{ title: 'Project Gutenberg | Free E-books', url: 'https://www.gutenberg.org/' },
+{ title: 'Internet Archive | Digital Library', url: 'https://archive.org/' },
+{ title: 'Open Library | Online Books', url: 'https://openlibrary.org/' },
+{ title: 'Google Books | Books & Research', url: 'https://books.google.com/' },
+      
+    ]
   },
-
-  // ============================================================
-  // MUSIC
-  // ============================================================
   {
     id: 'music',
     title: 'Music',
@@ -261,40 +160,22 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-violet-500 to-fuchsia-500',
     links: [
-      {
-        title: 'NCS | Non-Copyrighted Music',
-        url: 'https://ncs.io/',
-      },
-      {
-        title: 'Bandcamp | Music Platform',
-        url: 'https://bandcamp.com/',
-      },
-      {
-        title: 'SoundCloud | Music & Audio',
-        url: 'https://soundcloud.com/',
-      },
-      {
-        title: 'Spotify | Music Streaming',
-        url: 'https://open.spotify.com/',
-      },
-      {
-        title: 'YouTube Music | Music Streaming',
-        url: 'https://music.youtube.com/',
-      },
-      {
-        title: 'Music School | Bandcamp',
-        url: 'https://downloadmusicschool.com/bandcamp/',
-      },
-      {
-        title: 'Megathread | Music Resources',
-        url: 'https://github.com/MoonWalker440/Music-Megathread/',
-      },
-    ],
+        { title: 'Racoon | Multi Media Downloader', url: 'https://shailen.dedyn.io/racoon/' },
+        { title: 'AZMP3 | Youtube to MP3', url: 'https://azmp3.cc/' },
+        { title: 'Ezmp3 | Youtube to MP3', url: 'https://ezmp3.io/h520' },
+        { title: 'Cobalt | YT, IG, Twitch etc... *Downloader*', url: 'https://cobalt.tools/' },
+        { title: 'Lucida | HiFi Music Downloader', url: 'https://lucida.to/' },
+        { title: 'DoubleDouble | Download *HiFi* Music', url: 'https://doubledouble.top/' },
+        { title: 'NCS | Non-Copyrighted Music', url: 'https://ncs.io/' },
+        { title: 'Music School | Bandcamp to MP3', url: 'https://downloadmusicschool.com/bandcamp/' },
+        { title: 'CnvMP3 | Media Downloader', url: 'https://cnvmp3.com/' },
+        { title: 'Megathread | Everything Music Related', url: 'https://github.com/MoonWalker440/Music-Megathread/' },
+      { title: 'Bandcamp | Music Platform', url: 'https://bandcamp.com/' },
+{ title: 'SoundCloud | Music & Audio', url: 'https://soundcloud.com/' },
+{ title: 'Spotify | Music Streaming', url: 'https://open.spotify.com/' },
+{ title: 'YouTube Music | Music Streaming', url: 'https://music.youtube.com/' },
+    ]
   },
-
-  // ============================================================
-  // ANIME
-  // ============================================================
   {
     id: 'anime',
     title: 'Anime',
@@ -303,54 +184,17 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-pink-400 to-red-400',
     links: [
-      {
-        title: 'Crunchyroll | Anime Streaming',
-        url: 'https://www.crunchyroll.com/',
-      },
-      {
-        title: 'Netflix | Anime & TV',
-        url: 'https://www.netflix.com/',
-      },
-      {
-        title: 'Hulu | Anime & TV',
-        url: 'https://www.hulu.com/',
-      },
-      {
-        title: 'WEBTOON | Anime & Webcomics',
-        url: 'https://www.webtoons.com/',
-      },
-    ],
+        { title: 'AnimeKai | Hard-sub Anime', url: 'https://animekai.to/' },
+        { title: 'XPrime TV | Anime, Movies & TV', url: 'https://xprime.tv/' },
+        { title: 'KickAssAnime | Anime', url: 'https://kaa.mx/' },
+        { title: 'HiAnime | Anime Dub & Sub', url: 'https://hianimez.to/' },
+        { title: 'AnimeNoSub | Anime', url: 'https://animenosub.to/' },
+        { title: 'RiveStream | Anime, Movies & Live TV', url: 'https://rivestream.org/' },
+      { title: 'Crunchyroll | Anime Streaming', url: 'https://www.crunchyroll.com/' },
+{ title: 'Netflix | Anime & TV', url: 'https://www.netflix.com/' },
+{ title: 'Hulu | Anime & TV', url: 'https://www.hulu.com/' },
+    ]
   },
-
-  // ============================================================
-  // MANGA
-  // ============================================================
-  {
-    id: 'manga',
-    title: 'Manga',
-    description: 'Manga, webcomics and digital comics',
-    icon: BookOpen,
-    url: '#',
-    gradient: 'from-cyan-400 to-blue-500',
-    links: [
-      {
-        title: 'WEBTOON | Webcomics & Manga',
-        url: 'https://www.webtoons.com/',
-      },
-      {
-        title: 'MANGA Plus | Official Manga',
-        url: 'https://mangaplus.shueisha.co.jp/',
-      },
-      {
-        title: 'VIZ | Manga & Anime',
-        url: 'https://www.viz.com/',
-      },
-    ],
-  },
-
-  // ============================================================
-  // VPN
-  // ============================================================
   {
     id: 'vpn',
     title: 'VPN',
@@ -359,32 +203,26 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-yellow-400 to-orange-500',
     links: [
-      {
-        title: 'NordVPN',
-        url: 'https://nordvpn.com/',
-      },
-      {
-        title: 'ExpressVPN',
-        url: 'https://www.expressvpn.com/',
-      },
-      {
-        title: 'CyberGhost',
-        url: 'https://www.cyberghostvpn.com/',
-      },
-      {
-        title: 'Private Internet Access',
-        url: 'https://www.privateinternetaccess.com/',
-      },
-      {
-        title: 'Surfshark',
-        url: 'https://surfshark.com/',
-      },
-    ],
+        { title: 'NordVPN', url: 'https://go.nordvpn.net/aff_c?offer_id=15&aff_id=124563' },
+        { title: 'ExpressVPN', url: 'https://go.expressvpn.com/c/4281306/1462856/16063' },
+        { title: 'CyberGhost', url: 'https://safe.cyberghostvpn.com/flash-devices?utm_medium=affiliate&lp=flash-devices&coupon=2Y2Mb' },
+        { title: 'Private Internet Access', url: 'https://privateinternetaccess.com/cj/bestus?coupon=2Y2M' },
+        { title: 'Surfshark', url: 'https://www.tkqlhce.com/click-101452304-15438547' },
+    ]
   },
-
-  // ============================================================
-  // ADBLOCKERS
-  // ============================================================
+  {
+id: 'manga',
+title: 'Manga',
+description: 'Manga, webcomics and digital comics',
+icon: BookOpen,
+url: '#',
+gradient: 'from-cyan-400 to-blue-500',
+links: [
+{ title: 'WEBTOON | Webcomics & Manga', url: 'https://www.webtoons.com/' },
+{ title: 'MANGA Plus | Official Manga', url: 'https://mangaplus.shueisha.co.jp/' },
+{ title: 'VIZ | Manga & Anime', url: 'https://www.viz.com/' },
+]
+},
   {
     id: 'adblockers',
     title: 'AdBlockers',
@@ -393,18 +231,9 @@ export const CATEGORIES: CategoryItem[] = [
     url: '#',
     gradient: 'from-blue-500 to-indigo-600',
     links: [
-      {
-        title: 'AdGuard | AdBlocker',
-        url: 'https://adguard.com/',
-      },
-      {
-        title: 'Adblock Plus | AdBlocker',
-        url: 'https://adblockplus.org/',
-      },
-      {
-        title: 'uBlock Origin | Content Blocker',
-        url: 'https://ublockorigin.com/',
-      },
-    ],
+        { title: 'AdGuard | AdBlocker', url: 'https://adguard.com?aid=135720' },
+        { title: 'Adblock Plus | AdBlocker', url: 'https://adblockplus.org/' },
+        { title: 'UBlockOrigin | Content Blocker *Ads & more*', url: 'https://ublockorigin.com/' },
+    ]
   },
 ];
